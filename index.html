@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100vh;
+  background-color: #8CB9BD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay a {
+  display: block;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.overlay a:hover {
+  background-color: #555;
+}
+
+.right-content {
+  width: 75%;
+  float: right;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.logo {
+  z-index: 10; 
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 110px;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px; 
+  height: auto; 
+  border-radius: 50%;
+  color: #BED1CF;
+}
+
+.logo p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+}
+
+section#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1473172707857-f9e276582ab6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")
+      no-repeat center center / cover;
+}
+
+section#about {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1543269664-647163ef2ee4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")
+      no-repeat center center / cover;
+}
+
+section#skills {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80")
+      no-repeat center center / cover;
+}
+
+section#projects {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80")
+      no-repeat center center / cover;
+}
+
+section#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")
+      no-repeat center center / cover;
+}
+ul{
+    list-style-type: none;
+    padding: 4px;
+}
+
+@media (max-width: 52em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 37em) {
+  .hamburger-menu {
+    top: 0.5rem;
+    right: 1rem;
+  }
+  .logo {
+    position: static;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+<body>
+<div class="overlay" id="overlay">
+  <a href="#home" class="center">Home</a>
+  <a href="#about" class="center">About</a>
+  <a href="#skills" class="center">Skills</a>
+  <a href="#projects" class="center">Projects</a>
+  <a href="#contact" class="center">Contact</a>
+</div>
+<div class="logo">
+  <img src="profile.png" alt="Profile Picture">
+  <p>Karthikeyan</p>
+</div>
+<div class="right-content">
+  <section id="home" class="center">
+    <h1>Hi I'm Karthikeyan</h1>
+  </section>
+  <section id="about" class="center">
+    <ul>
+        <li><h1>Pursuing 2nd year in IT course at KEC</h1></li>
+        <li><h1>Completed HSC with 93% at 2022</h1></li>
+        <li><h1>Completed SSLC with 89.6% at 2020</h1></li>
+    </ul>
+  </section>
+  <section id="skills" class="center">
+    <ul>
+    <li><h1>My Area of interest lies with AI & ML</h1></li>
+    <li><h1>Familiar with DSA, Problem solving, Critical thinking activities</h1></li>
+    <li><h1>Acting as a SPOC for Institution Innovation Council at KEC</h1></li>
+    </ul>
+  </section>
+  <section id="projects" class="center">
+    <ul>
+        <li><h1>Presented 2 projects at KEC</h1></li>
+        <ul><li>1.Parental control using Keloggers</li>
+        <li>2.Advanced ANPR and FR</li></ul>
+        <li><h1>Presented 3 papers at various institutions</h1></li>
+        <ul><li>1.E-Business</li>
+            <li>2.DNA Computing</li>
+            <li>3.Health Monitoring System using 8051 mc and AI</li>
+        </ul>
+    </ul>
+  </section>
+  <section id="contact" class="center">
+    <ul>
+        <li>Contact: </li>
+        <li><h1>+91 8248626682</h1></li>
+        <li><h1>karthikeyanr.22it@kongu.edu</h1></li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>
